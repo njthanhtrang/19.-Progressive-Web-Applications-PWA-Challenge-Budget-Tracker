@@ -57,7 +57,7 @@ function uploadTransaction() {
   getAll.onsuccess = function () {
     // if there was data in indexedDb's store, send to api server
     if (getAll.result.length > 0) {
-      fetch("/api/transaction", {
+      fetch("/api/transaction/bulk", {
         method: "POST",
         // getAll.result is an array of all data we retrieved from new_transaction obj store
         body: JSON.stringify(getAll.result),
@@ -67,10 +67,7 @@ function uploadTransaction() {
         }
       })
         .then((response) => response.json())
-        .then((serverResponse) => {
-          if (serverResponse.message) {
-            throw new Error(serverResponse);
-          }
+        .then(() => {
           // open one more transaction
           const transaction = db.transaction(["new_transaction"], "readwrite");
           // access new_transaction obj store
