@@ -1,39 +1,29 @@
 # 19. Progressive Web Applications (PWA) Challenge: Budget Tracker
 ## Description 
-​This application is an 
+​This application is a modified budget tracker application that allows offline access and functionality for tracking expenses and deposits to a user's finances. This application is perfect for travelers who want to ensure their account balances are accurate when traveling with spotty internet connection. Users receive notifications that transactions have been added with or upon reestablishing internet connection. The user is able to add expenses and deposits to their budget with or without a connection. If transactions are entered offline, the total is updated when brought back online.
+
+This project includes a Web Manifest as a mobile-first application to let users’ devices know what they’re installing and how the app should look on the home screen.
 ​
 ## Table of Contents
 ​
-* [Installation](#installation)
 * [Usage](#usage)
 * [Packages](#packages)
 * [Credits](#credits)
 * [Questions](#questions)
 * [License](#license)
-​
-## Installation
-​
-Clone the repository, navigate to the project folder on your CLI and run the following command to install Node.js:
 
-```npm install```
 ## Usage 
-Run the following command on your CLI to run the application:
+Visit the deployed site at https://budgettracker302.herokuapp.com/.
 
-```npm start```
-
-Video demonstration: https://youtu.be/caR7PuJkL7g
-
-<img width="1128" alt="Screen Shot 2021-07-08 at 3 47 42 PM" src="https://user-images.githubusercontent.com/77700824/124999826-d64fa680-e003-11eb-9a0b-329cf3873da8.png">
-<img width="1125" alt="Screen Shot 2021-07-08 at 3 48 22 PM" src="https://user-images.githubusercontent.com/77700824/124999874-ed8e9400-e003-11eb-8928-31e96ae7e127.png">
-<img width="1133" alt="Screen Shot 2021-07-08 at 3 48 39 PM" src="https://user-images.githubusercontent.com/77700824/124999897-f7b09280-e003-11eb-8e83-b3146a1b4cdf.png">
-<img width="1135" alt="Screen Shot 2021-07-08 at 3 48 53 PM" src="https://user-images.githubusercontent.com/77700824/124999922-00a16400-e004-11eb-9c0b-960f4fd1e27c.png">
-<img width="1455" alt="Screen Shot 2021-07-08 at 3 49 28 PM" src="https://user-images.githubusercontent.com/77700824/124999956-14e56100-e004-11eb-8a8b-a8b8fead6783.png">
-​
+<img width="1231" alt="Screen Shot 2021-07-08 at 4 37 30 PM" src="https://user-images.githubusercontent.com/77700824/125002878-cb4c4480-e00a-11eb-8f7c-a5705acfefe4.png">
 
 ## Packages
 
-* Express.js https://www.npmjs.com/package/express
-* Mongoose ODM https://www.npmjs.com/package/mongoose to connect to MongoDB database
+* IndexedDB for offline persistence
+* Service Workers
+* Express.js server
+* MongoDB Atlas and database
+
 ## Credits
 ​
 Starter code retrieved from https://github.com/coding-boot-camp/symmetrical-bassoon. Created by Jennifer Nguyen.
